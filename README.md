@@ -1,5 +1,5 @@
 # IncidentIQ - Enterprise Local Incident Analytics & Reporting Platform
-
+URL - https://incident-iq-6xew.onrender.com
 **IncidentIQ** is a complete, functional, local-first operational incident analytics and reporting platform built for corporate Windows environments with strict air-gap and network constraints.
 
 Users can query incident data in natural language (via typed input or microphone speech recognition) and receive verified tabular datasets, executive KPIs, interactive charts, analytical insights, recurring pattern fingerprints, root-cause context, and instant downloadable PDF/Excel reports—**running 100% locally with zero cloud dependencies, zero external APIs, and zero large local LLMs**.
