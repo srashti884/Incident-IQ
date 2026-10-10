@@ -1,0 +1,113 @@
+{
+  "entity_mappings": {
+    "application": {
+      "column": "application",
+      "aliases": {
+        "aws": "AWS Cloud Infrastructure",
+        "amazon": "AWS Cloud Infrastructure",
+        "amazon web services": "AWS Cloud Infrastructure",
+        "cloud": "AWS Cloud Infrastructure",
+        "payment": "Payment Gateway Service",
+        "payments": "Payment Gateway Service",
+        "payment gateway": "Payment Gateway Service",
+        "checkout": "Payment Gateway Service",
+        "auth": "Auth & Identity Gateway",
+        "authentication": "Auth & Identity Gateway",
+        "identity": "Auth & Identity Gateway",
+        "oauth": "Auth & Identity Gateway",
+        "sap": "SAP ERP Core",
+        "erp": "SAP ERP Core",
+        "sap erp": "SAP ERP Core",
+        "kafka": "Kafka Stream Cluster",
+        "stream": "Kafka Stream Cluster",
+        "streaming": "Kafka Stream Cluster",
+        "billing": "Billing Engine",
+        "invoicing": "Billing Engine",
+        "subscriptions": "Billing Engine",
+        "crm": "CRM Customer Portal",
+        "salesforce": "CRM Customer Portal",
+        "customer portal": "CRM Customer Portal",
+        "ad": "Active Directory Sync",
+        "active directory": "Active Directory Sync",
+        "directory": "Active Directory Sync"
+      }
+    },
+    "severity": {
+      "column": "severity",
+      "aliases": {
+        "critical": "Critical",
+        "p1": "Critical",
+        "sev1": "Critical",
+        "blocker": "Critical",
+        "high": "High",
+        "p2": "High",
+        "sev2": "High",
+        "major": "High",
+        "medium": "Medium",
+        "p3": "Medium",
+        "sev3": "Medium",
+        "moderate": "Medium",
+        "low": "Low",
+        "p4": "Low",
+        "sev4": "Low",
+        "minor": "Low"
+      }
+    },
+    "status": {
+      "column": "status",
+      "aliases": {
+        "open": ["Open"],
+        "unresolved": ["Open", "In Progress"],
+        "active": ["Open", "In Progress"],
+        "ongoing": ["Open", "In Progress"],
+        "in progress": ["In Progress"],
+        "investigating": ["In Progress"],
+        "resolved": ["Resolved"],
+        "closed": ["Closed"],
+        "completed": ["Resolved", "Closed"],
+        "done": ["Resolved", "Closed"]
+      }
+    },
+    "sla": {
+      "column": "sla_breached",
+      "aliases": {
+        "breach": 1,
+        "breached": 1,
+        "breaches": 1,
+        "sla breach": 1,
+        "sla breached": 1,
+        "sla violation": 1,
+        "missed sla": 1,
+        "overdue": 1,
+        "within sla": 0,
+        "met sla": 0,
+        "sla met": 0
+      }
+    }
+  },
+  "service_mappings": {
+    "ec2": "EC2 Compute Fleet",
+    "compute": "EC2 Compute Fleet",
+    "rds": "RDS Database Cluster",
+    "database": "RDS Database Cluster",
+    "s3": "S3 Object Store",
+    "storage": "S3 Object Store",
+    "vpc": "VPC Direct Connect",
+    "checkout api": "Checkout API",
+    "settlement": "Settlement Batch",
+    "fraud": "Fraud Detection Engine",
+    "oauth2": "OAuth2 Token Service",
+    "token": "OAuth2 Token Service",
+    "mfa": "MFA Authenticator",
+    "saml": "SAML Federation Provider",
+    "general ledger": "General Ledger Engine",
+    "supply chain": "Supply Chain Dispatch",
+    "broker": "Broker Cluster North",
+    "consumer": "Event Consumer Group",
+    "consumer group": "Event Consumer Group",
+    "invoice": "Invoice Dispatcher",
+    "subscription": "Recurring Subscription Daemon",
+    "support dashboard": "Customer Support Dashboard",
+    "ad connect": "Azure AD Connect Agent"
+  }
+}

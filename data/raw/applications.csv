@@ -1,0 +1,9 @@
+app_id,name,short_name,tier,owner,criticality
+APP-AWS,AWS Cloud Infrastructure,AWS,Tier-1,Cloud Ops Core,Critical
+APP-PAY,Payment Gateway Service,Payment Gateway,Tier-1,FinTech Engineering,Critical
+APP-AUTH,Auth & Identity Gateway,Auth Gateway,Tier-1,SecOps & IAM,Critical
+APP-SAP,SAP ERP Core,SAP ERP,Tier-2,Enterprise Apps,High
+APP-KAFKA,Kafka Stream Cluster,Kafka,Tier-1,Data Platform Team,Critical
+APP-BILL,Billing Engine,Billing,Tier-2,Revenue Ops,High
+APP-CRM,CRM Customer Portal,CRM,Tier-2,Customer Experience,Medium
+APP-AD,Active Directory Sync,Active Directory,Tier-3,Internal IT Ops,Medium

@@ -1,0 +1,68 @@
+[
+  {
+    "pattern_id": "RP-014",
+    "fingerprint": "AWS + Timeout + Payment + API",
+    "app_name": "Payment Gateway Service",
+    "service_name": "Checkout API",
+    "severity": "Critical",
+    "title_template": "Checkout API downstream timeout during peak payment processing via AWS RDS",
+    "root_cause": "Database connection pool exhaustion under sudden traffic burst",
+    "category": "Database Contention",
+    "frequency_weight": 42
+  },
+  {
+    "pattern_id": "RP-008",
+    "fingerprint": "Auth + Token + Expiration + Latency",
+    "app_name": "Auth & Identity Gateway",
+    "service_name": "OAuth2 Token Service",
+    "severity": "High",
+    "title_template": "OAuth2 token verification latency exceeding SLA threshold during token rotation",
+    "root_cause": "Redis cache lock contention during simultaneous multi-region token refresh",
+    "category": "Cache Concurrency",
+    "frequency_weight": 35
+  },
+  {
+    "pattern_id": "RP-022",
+    "fingerprint": "Kafka + Consumer + Lag + Offset",
+    "app_name": "Kafka Stream Cluster",
+    "service_name": "Event Consumer Group",
+    "severity": "High",
+    "title_template": "Consumer group partition rebalance failure causing unbounded consumer lag",
+    "root_cause": "Heartbeat timeout mismatch caused by long-running message handler",
+    "category": "Consumer Starvation",
+    "frequency_weight": 28
+  },
+  {
+    "pattern_id": "RP-003",
+    "fingerprint": "AWS + RDS + IOPS + Throttling",
+    "app_name": "AWS Cloud Infrastructure",
+    "service_name": "RDS Database Cluster",
+    "severity": "Critical",
+    "title_template": "AWS RDS Provisioned IOPS throttling during nocturnal automated snapshot",
+    "root_cause": "Storage volume burst balance depletion during overlapping maintenance window",
+    "category": "Infrastructure Limits",
+    "frequency_weight": 31
+  },
+  {
+    "pattern_id": "RP-019",
+    "fingerprint": "Billing + Batch + Lock + Deadlock",
+    "app_name": "Billing Engine",
+    "service_name": "Invoice Dispatcher",
+    "severity": "Medium",
+    "title_template": "Invoice batch generation aborted due to transactional deadlock on billing table",
+    "root_cause": "Unordered SQL update execution in parallelized invoice worker jobs",
+    "category": "Application Deadlock",
+    "frequency_weight": 24
+  },
+  {
+    "pattern_id": "RP-005",
+    "fingerprint": "AD + Sync + Certificate + Handshake",
+    "app_name": "Active Directory Sync",
+    "service_name": "Azure AD Connect Agent",
+    "severity": "Low",
+    "title_template": "Directory synchronization agent TLS handshake failure during cert rotation",
+    "root_cause": "Mismatched intermediate CA trust chain on internal sync proxy server",
+    "category": "Network & Security",
+    "frequency_weight": 19
+  }
+]

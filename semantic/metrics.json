@@ -1,0 +1,46 @@
+{
+  "metrics": {
+    "incident_count": {
+      "name": "Incident Count",
+      "description": "Total volume of incidents satisfying query criteria",
+      "sql_expression": "COUNT(*)",
+      "type": "integer",
+      "format": "{value} incidents"
+    },
+    "critical_count": {
+      "name": "Critical Incidents",
+      "description": "Count of severity Critical (P1) incidents",
+      "sql_expression": "SUM(CASE WHEN severity = 'Critical' THEN 1 ELSE 0 END)",
+      "type": "integer",
+      "format": "{value}"
+    },
+    "sla_breaches": {
+      "name": "SLA Breaches",
+      "description": "Count of incidents that breached target resolution SLA",
+      "sql_expression": "SUM(CASE WHEN sla_breached = 1 THEN 1 ELSE 0 END)",
+      "type": "integer",
+      "format": "{value} breached"
+    },
+    "sla_breach_rate": {
+      "name": "SLA Breach Rate",
+      "description": "Percentage of incidents breaching SLA",
+      "sql_expression": "ROUND(SUM(CASE WHEN sla_breached = 1 THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(*), 0), 1)",
+      "type": "percentage",
+      "format": "{value}%"
+    },
+    "average_resolution_time": {
+      "name": "Average Resolution Time (MTTR)",
+      "description": "Mean time to resolution in minutes for resolved or closed incidents",
+      "sql_expression": "ROUND(AVG(resolution_time_minutes), 1)",
+      "type": "duration_minutes",
+      "format": "{value} mins"
+    },
+    "average_impact_score": {
+      "name": "Average Impact Score",
+      "description": "Mean calculated business & operational impact score (1-100)",
+      "sql_expression": "ROUND(AVG(impact_score), 1)",
+      "type": "score",
+      "format": "{value}/100"
+    }
+  }
+}

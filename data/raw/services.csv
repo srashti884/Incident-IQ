@@ -1,0 +1,20 @@
+service_id,app_id,name,tier
+SVC-EC2,APP-AWS,EC2 Compute Fleet,Tier-1
+SVC-RDS,APP-AWS,RDS Database Cluster,Tier-1
+SVC-S3,APP-AWS,S3 Object Store,Tier-1
+SVC-VPC,APP-AWS,VPC Direct Connect,Tier-1
+SVC-PAY-API,APP-PAY,Checkout API,Tier-1
+SVC-PAY-SET,APP-PAY,Settlement Batch,Tier-2
+SVC-PAY-FRD,APP-PAY,Fraud Detection Engine,Tier-1
+SVC-AUTH-OAUTH,APP-AUTH,OAuth2 Token Service,Tier-1
+SVC-AUTH-MFA,APP-AUTH,MFA Authenticator,Tier-1
+SVC-AUTH-SAML,APP-AUTH,SAML Federation Provider,Tier-2
+SVC-SAP-FIN,APP-SAP,General Ledger Engine,Tier-2
+SVC-SAP-SCM,APP-SAP,Supply Chain Dispatch,Tier-2
+SVC-KAF-BRK,APP-KAFKA,Broker Cluster North,Tier-1
+SVC-KAF-CNS,APP-KAFKA,Event Consumer Group,Tier-1
+SVC-BIL-INV,APP-BILL,Invoice Dispatcher,Tier-2
+SVC-BIL-REC,APP-BILL,Recurring Subscription Daemon,Tier-2
+SVC-CRM-WEB,APP-CRM,Customer Support Dashboard,Tier-3
+SVC-CRM-API,APP-CRM,Salesforce Integration API,Tier-2
+SVC-AD-SYNC,APP-AD,Azure AD Connect Agent,Tier-3

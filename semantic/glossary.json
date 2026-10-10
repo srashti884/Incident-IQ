@@ -1,0 +1,47 @@
+{
+  "domain": "IT Operations & Incident Management",
+  "version": "1.0",
+  "terms": {
+    "incident": {
+      "definition": "An unplanned interruption to an IT service or reduction in the quality of an IT service.",
+      "synonyms": ["issue", "ticket", "outage", "failure", "alert", "bug", "event"]
+    },
+    "severity": {
+      "definition": "The extent of impact that an incident has on the business or technical system.",
+      "levels": ["Critical", "High", "Medium", "Low"],
+      "synonyms": ["urgency", "impact level", "sev", "priority level"]
+    },
+    "sla": {
+      "definition": "Service Level Agreement - contractually committed target time to resolve an incident.",
+      "synonyms": ["sla target", "sla deadline", "response commitment", "service level"]
+    },
+    "sla_breach": {
+      "definition": "An incident whose actual resolution time exceeded the agreed SLA target.",
+      "synonyms": ["breach", "sla violation", "missed sla", "breached ticket", "overdue"]
+    },
+    "mttr": {
+      "definition": "Mean Time to Resolve - the average duration from incident creation to incident resolution in minutes or hours.",
+      "synonyms": ["mean time to resolve", "average resolution time", "avg duration", "resolution speed"]
+    },
+    "recurring_incident": {
+      "definition": "An incident that shares structural patterns, application footprints, and underlying root causes with past incidents.",
+      "synonyms": ["recurring pattern", "repeated issue", "duplicate failure", "chronic issue", "pattern"]
+    },
+    "root_cause": {
+      "definition": "The fundamental cause or underlying factor that triggered the incident.",
+      "synonyms": ["underlying issue", "source of failure", "culprit", "trigger", "cause", "why it happened"]
+    },
+    "application": {
+      "definition": "A business software system or infrastructure platform.",
+      "synonyms": ["app", "system", "platform", "workload"]
+    },
+    "service": {
+      "definition": "A specific technical component or microservice belonging to an application.",
+      "synonyms": ["microservice", "component", "daemon", "service tier", "subsystem"]
+    },
+    "fingerprint": {
+      "definition": "A signature composed of system tokens (app, service, error signature) representing a recurring failure pattern.",
+      "synonyms": ["signature", "pattern id", "cluster", "pattern profile"]
+    }
+  }
+}
