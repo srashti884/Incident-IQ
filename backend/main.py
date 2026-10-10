@@ -67,10 +67,16 @@ if os.path.exists(FRONTEND_DIST):
         if os.path.exists(index_html):
             return FileResponse(index_html)
         return JSONResponse(status_code=404, content={"detail": "Frontend build not found"})
-else:
-    @app.get("/")
-    async def index():
-        return await serve_spa("/")
+    
+@app.get("/")
+async def index():
+    index_html = os.path.join(FRONTEND_DIST, "index.html")
+    if os.path.exists(index_html):
+        return FileResponse(index_html)
+    return JSONResponse(
+        status_code=404,
+        content={"detail": "Frontend build not found"}
+        )
 
 if __name__ == "__main__":
     import uvicorn
