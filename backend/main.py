@@ -69,10 +69,8 @@ if os.path.exists(FRONTEND_DIST):
         return JSONResponse(status_code=404, content={"detail": "Frontend build not found"})
 else:
     @app.get("/")
-    def index():
-        return {
-            "message": "IncidentIQ Backend is running. Frontend dev server runs on http://localhost:5173 or build frontend to dist."
-        }
+    async def index():
+        return await serve_spa("/")
 
 if __name__ == "__main__":
     import uvicorn
